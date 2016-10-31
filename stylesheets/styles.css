@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Alef:400,700|Amatica+SC:400,700|Assistant:400,700|Frank+Ruhl+Libre|Heebo:100,400,700|Miriam+Libre:400,700|Rubik:300,400,700|Secular+One|Varela+Round&subset=hebrew");
 /* reset */
 /* line 3, ../sass/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -3821,12 +3822,12 @@ table {
   clip: auto;
 }
 
-/* line 5, ../sass/styles.scss */
+/* line 8, ../sass/styles.scss */
 body, html {
   direction: rtl;
 }
 
-/* line 9, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 .typo-topbar {
   font-size: 16px;
   overflow: hidden;
@@ -3836,18 +3837,42 @@ body, html {
   top: 0;
   padding: 10px;
 }
-/* line 18, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
 .typo-topbar .typo-menu-button {
   display: inline-block;
   float: right;
 }
-/* line 25, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 .typo-topbar .typo-menu-share {
   display: inline-block;
   float: left;
 }
+/* line 46, ../sass/styles.scss */
+.typo-topbar .typo-logo {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 51, ../sass/styles.scss */
+.typo-topbar .typo-logo span {
+  display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Varela Round', sans-serif;
+  letter-spacing: 0;
+}
+/* line 58, ../sass/styles.scss */
+.typo-topbar .typo-logo span:hover {
+  letter-spacing: 5px;
+}
 
-/* line 37, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .typo-stage {
   height: 100vh;
   background: #fffee0;

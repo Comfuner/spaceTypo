@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Alef:400,700|Amatica+SC:400,700|Assistant:400,700|Frank+Ruhl+Libre|Heebo:100,400,700|Miriam+Libre:400,700|Rubik:300,400,700|Secular+One|Varela+Round&subset=hebrew');
+
 @import "reset";
+@import "mixins";
 @import "helpers";
 @import "fa/_font-awesome.scss";
 
@@ -6,6 +9,17 @@ body, html {
 direction: rtl;
 };
 
+//.allfonts {
+//  font-family: 'Varela Round', sans-serif;
+//  font-family: 'Rubik', sans-serif;
+//  font-family: 'Alef', sans-serif;
+//  font-family: 'Heebo', sans-serif;
+//  font-family: 'Secular One', sans-serif;
+//  font-family: 'Amatica SC', cursive;
+//  font-family: 'Miriam Libre', sans-serif;
+//  font-family: 'Frank Ruhl Libre', sans-serif;
+//  font-family: 'Assistant', sans-serif;
+//}
 .typo-topbar {
   font-size:16px;
   overflow:hidden;
@@ -29,8 +43,22 @@ direction: rtl;
       @extend .typo-topbar-icon
     }
   }
-  .type-logo {
-
+  .typo-logo {
+    display: inline-block;
+    position: absolute;
+    left:50%;
+    @include prefix((transform:translateX(-50%)));
+    span {
+      display: inline-block;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      font-family: 'Varela Round', sans-serif;
+      letter-spacing: 0;
+      &:hover {
+        letter-spacing: 5px;
+      }
+    }
   }
 }
 
