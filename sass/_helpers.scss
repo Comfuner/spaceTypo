@@ -1,0 +1,14 @@
+.typo-dropshadow {
+  box-shadow: 0 2px 7px rgba(0,0,0,0.25);
+}
+.typo-general-transition {
+  transition: all 0.25s ease-in-out;
+}
+.typo-topbar-icon {
+  transition: all 0.25s ease-in-out;
+  cursor:pointer;
+  opacity: 0.4;
+  &:hover {
+    opacity: 1;
+  }
+}

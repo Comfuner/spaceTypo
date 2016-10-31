@@ -1,0 +1,45 @@
+@import "reset";
+@import "helpers";
+@import "fa/_font-awesome.scss";
+
+body, html {
+direction: rtl;
+};
+
+.typo-topbar {
+  font-size:16px;
+  overflow:hidden;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  padding: 10px;
+  @extend .typo-dropshadow;
+  .typo-menu-button {
+    display:inline-block;
+    float:right;
+    i {
+      @extend .typo-topbar-icon
+    }
+  }
+  .typo-menu-share {
+    display:inline-block;
+    float:left;
+    i {
+      @extend .typo-topbar-icon
+    }
+  }
+  .type-logo {
+
+  }
+}
+
+.typo-stage {
+  height:100vh;
+  background: #fffee0;
+  background: -moz-linear-gradient(top,  #fffee0 0%, #ffffff 100%, #ffffff 100%);
+  background: -webkit-linear-gradient(top,  #fffee0 0%,#ffffff 100%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #fffee0 0%,#ffffff 100%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffee0', endColorstr='#ffffff',GradientType=0 );
+}
+
